@@ -3,14 +3,14 @@
 namespace DB
 {
 
-void HTTPPathHints::add(const String & httpPath) 
+void HTTPPathHints::add(const String & http_path)
 {
-    httpPaths_.push_back(httpPath);
+    http_paths.push_back(http_path);
 }
 
 std::vector<String> HTTPPathHints::getAllRegisteredNames() const
 {
-    return httpPaths_;
+    return http_paths;
 }
 
 }

@@ -11,10 +11,10 @@ class HTTPPathHints : public IHints<1, HTTPPathHints>
 {
 public:
     std::vector<String> getAllRegisteredNames() const override;
-    void add(const String & httpPath);
+    void add(const String & http_path);
 
 private:
-    std::vector<String> httpPaths_;
+    std::vector<String> http_paths;
 };
 
 using HTTPPathHintsPtr = std::shared_ptr<HTTPPathHints>;
